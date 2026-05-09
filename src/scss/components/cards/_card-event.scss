@@ -1,0 +1,86 @@
+.card.card-event {
+    border: 0;
+    color: $secondary;
+    display: flex;
+    flex-direction: row;
+
+    .card-emblem {
+        flex: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .date {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 0.825rem 1rem;
+            text-align: center;
+            border-bottom-right-radius: 1rem;
+
+            .month {
+                text-transform: uppercase;
+                @include font-size (12px);
+            }
+            
+            .day {
+                line-height: 1;
+                font-weight: 900;
+                font-size: 42px;
+                color: $primary;
+            }
+        }
+    }
+
+    .card-image {
+        flex: 25%;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        &::after {
+            background: linear-gradient(360deg, var(--card-g1-color) 0%, var(--card-g2-color) 100%);
+        }
+    }
+
+    .card-title {
+        font-size: 0.825rem;
+        margin-bottom: 0;
+
+        a {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+
+    .card-body {
+        flex: 50%;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--card-color);
+    }
+
+    .card-caption {
+        font-weight: 400;
+        font-size: 0.625rem;
+    }
+    
+    .timestamp {
+        display: flex;
+        align-items: center;
+        font-size: 0.625rem;
+
+        .icon {
+            margin-right: 0.5rem;
+        }
+    }
+
+    @include media-breakpoint-up (md) {
+        border: 1px solid $gray-200;
+    }
+}

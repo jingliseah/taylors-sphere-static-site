@@ -1,0 +1,26 @@
+.section.section-testimonials-intro {
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .section-title {
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: center;
+
+        .word {
+            display: block;
+            // overflow: hidden;
+            
+            .word-inner {
+                // transform-origin: 0 0;
+                display: block;
+            }
+        }
+    }
+}
+
+.section.section-testimonials-v2 {
+    min-height: 100vh;
+}

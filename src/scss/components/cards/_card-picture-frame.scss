@@ -1,0 +1,8 @@
+.card.card-picture-frame {
+    padding: 2rem;
+    box-shadow: 32px 32px 16px rgba(0, 0, 0, 0.1);
+
+    .card-img img {
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,83 @@
+/**
+ * For more variables, take a look at
+ * node_modules\bootstrap\scss\_variables.scss
+ */
+
+$gray-100: #fafafa;
+$gray-200: #eceff1;
+$gray-300: #e5e5e5;
+$gray-400: #A7AAB2;
+$gray-600: #868991;
+$gray-700: #5F6269;
+
+$primary: #EC1C24;
+$secondary: #180C4C;
+$body-color: #0e1118;
+$success: #26D192;
+$orange: #FE8200;
+
+// Additional Theme Colours
+$taylors-red: #EC1C24;
+$bumblebee-yellow: #FFF100;
+$turquoise: #52D5B1;
+
+$font-family-sans-serif: 'Avenir', 'Segoe UI', 'Helvetica Nueue', system-ui, -apple-system, sans-serif;
+$font-weight-base: 500;
+$headings-font-weight: 600;
+$display-font-weight: 900;
+
+$input-btn-font-size: 1rem;
+$input-btn-padding-x: 1.25rem;
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x-lg: 2rem;
+$input-btn-padding-y-lg: 1rem;
+$input-border-color: $gray-300;
+$input-placeholder-color: $gray-400;
+
+$btn-padding-y: 1rem;
+$btn-padding-x: 2rem;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 9,
+);
+$container-padding-x: 1.5rem;
+
+$enable-rounded: false;
+
+$border-color: $gray-200;
+
+$form-check-input-border-radius: 0px;
+$form-check-input-width: 1.25em;
+$form-check-padding-start: 2em;
+$form-check-input-border: 1px solid $gray-300;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 12.4254L9.45177 17L18 8.24129L16.7728 7L9.45177 14.5L6.21024 11.1754L5 12.4254Z' fill='white'/%3E%3C/svg%3E%0A");
+$form-floating-transition: opacity .3s ease, transform .3s ease;
+$form-select-feedback-icon-size: .5rem;
+
+$card-border-color: $gray-300;
+$dropdown-border-color: $gray-300;
+
+// AITI Navigations
+$backoffice-nav-height: 64px;
+$backoffice-nav-height-md: 82px;
+$nav-height: 72px;
+$nav-height-md: 96px;
+
+$modal-header-padding-x: 1.5rem;
+$modal-backdrop-opacity: .5;
+$modal-fade-transform: scale(.8);
+$modal-content-border-width: 0;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            900 !default;
+$font-weight-bolder:          bolder !default;

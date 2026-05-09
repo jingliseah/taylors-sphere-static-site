@@ -1,0 +1,77 @@
+.card.card-video {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    .thumbnail{
+        position: relative;
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+            opacity: 0.8;
+            height: 100%;
+            width: 100%;
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+
+            img {
+                width: 60px;
+                height: 60px;
+
+                @include media-breakpoint-up(md) { 
+                    width: auto;
+                    height: 60%;
+                }
+            }
+        }
+
+        .image {
+            width: 100%;
+            height: 313px;
+        }
+
+        iframe {
+            height: 313px;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .card-body {
+        .card-title {
+            font-size: 14px;
+
+            @include media-breakpoint-up(md) { 
+                font-size: 24px;
+            }
+        }
+
+        .card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 12px;
+
+            @include media-breakpoint-up(md) { 
+                font-size: 16px;
+            }
+        }
+    }
+}

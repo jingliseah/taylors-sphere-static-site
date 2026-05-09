@@ -1,0 +1,41 @@
+.display-xxl {
+    @include font-size(96px !important);
+    font-weight: $display-font-weight;
+}
+
+.display-xl {
+    @include font-size(42px !important);
+    font-weight: $display-font-weight;
+}
+
+.display-l {
+    @include font-size(32px !important);
+    font-weight: $display-font-weight;
+}
+
+.heading-l {
+    @include font-size(24px !important);
+    font-weight: $display-font-weight;
+}
+
+.heading-s {
+    @include font-size(18px !important);
+    font-weight: $display-font-weight;
+}
+
+.subheading {
+    @include font-size (14px !important);
+    font-weight: $font-weight-base;
+    line-height: 1.05;
+}
+
+.caption {
+    @include font-size(12px !important);
+    font-weight: $font-weight-base;
+    line-height: 1.1;
+}
+
+sup {
+    font-size: 0.5em !important;
+    top: -1em !important;
+}

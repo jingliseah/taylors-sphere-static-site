@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Taylor'sphere</title>
+		<meta name="description" content="Join us in the Taylor’sphere™️, our well-balanced learning ecosystem and community, supported by staff, industry partners, and alumni.">
+		<meta property="og:title" content="Taylor'sphere" />
+		<meta property="og:description" content="Join us in the Taylor’sphere™️, our well-balanced learning ecosystem and community, supported by staff, industry partners, and alumni." />
+		<meta property="og:image" content="/assets/favicon/taylorsphere-thumbnail.jpg" />
+
+		<style>
+			.is-loading .decorations-container .decoration {
+				visibility: hidden;
+			}
+		</style>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/assets/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#ec1c24">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body class="is-loading">
+		<div id="app">
+			<header>
+                <custom-header :locomotive="locoInstance">
+					<template #socialnetwork>
+						<ul class="list-unstyled d-flex d-md-none mb-0 justify-content-center">
+                            <li><a href="https://www.facebook.com/TaylorsUniversityMY" target="_blank"><img src="~@/assets/img/icons/facebook.svg" alt="Facebook"></a></li>
+                            <li class="ps-4"><a href="https://www.instagram.com/taylorsuni" target="_blank"><img src="~@/assets/img/icons/instagram.svg" alt="Instagram"></a></li>
+                            <li class="ps-4"><a href="https://www.youtube.com/user/taylors" target="_blank"><img src="~@/assets/img/icons/youtube.svg" alt="Youtube"></a></li>
+                        </ul>
+					</template>
+				</custom-header>
+            </header>
+			<main>
+				{% block main %}{% endblock %}
+			</main>
+		</div>
+	</body>
+</html>

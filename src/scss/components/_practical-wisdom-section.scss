@@ -1,0 +1,128 @@
+.section-practical-wisdom {
+    position: relative;
+    overflow: hidden;
+
+    .summary {
+        top: 5rem;
+        right: 10rem;
+    }
+
+    .main-kv-container {
+        position: absolute;
+        bottom: 22%;
+        width: 150%;
+        left: 0;
+        right: 0;
+        height: 200px;
+        margin-left: 50%;
+        transform: translateX(-55%);
+
+        @include media-breakpoint-up(md) {
+            bottom: -30px;
+            width: 80%;
+            height: 78vh;
+            margin: auto;
+            transform: unset;
+        }
+
+        .main-kv {
+            img {
+                width: 104%;
+                @include media-breakpoint-up(md) { 
+                    width: 100%;
+                }
+            }
+        }
+
+        .blurp {
+            position: absolute;
+            right: 9%;
+            width: 55%;
+            bottom: 3%;
+
+            @include media-breakpoint-up(md) { 
+                bottom: 38%;
+            }
+        }
+
+        .dots-element-1,
+        .dots-element-2 {
+            position: absolute;
+            top: 0;
+            width: 3%;
+        }
+
+        .dots-element-1 {
+            left: 41%;
+            top: 21%;
+
+            @include media-breakpoint-up(md) { 
+                top: 12%;
+            }
+        }
+
+        .dots-element-2 {
+            top: 62.8%;
+            right: 15%;
+
+            @include media-breakpoint-up(md) { 
+                top: 38.8%;
+            }
+        }
+
+        .red-circle {
+            position: absolute;
+            left: 0;
+            right: -5%;
+            margin: auto;
+            width: 100%;
+            bottom: -62%;
+
+            @include media-breakpoint-up(md) { 
+                right: -8%;
+                width: 80%;
+                top: 15%;
+                bottom: unset;
+            }
+        }
+
+        .small-ring-1 {
+            position: absolute;
+            left: 8%;
+            bottom: 43%;
+        }
+
+        .small-ring-2 {
+            position: absolute;
+            left: 26%;
+            top: 4%;
+            width: 5%;
+            @include media-breakpoint-up(md){
+                width: unset;
+            }
+        }
+
+        .small-ring-3 {
+            position: absolute;
+            right: 20%;
+            bottom: 75%;
+            width: 3%;
+            @include media-breakpoint-up(md){
+                right: 17%;
+                bottom: 70%;
+                width: unset;
+            }
+        }
+
+        .small-ring-4 {
+            position: absolute;
+            right: 13%;
+            bottom: 67%;
+            width: 5%;
+            @include media-breakpoint-up(md){
+                right: 12%;
+                width: unset;
+            }
+        }
+    }
+}

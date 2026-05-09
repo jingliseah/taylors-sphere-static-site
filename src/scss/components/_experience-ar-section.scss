@@ -1,0 +1,11 @@
+.section.section-experience-ar {
+    .ea-iframe {
+        visibility: hidden;
+        width: 0%;
+        height: 331px;
+
+        @include media-breakpoint-up(md) {
+            height: 540px;
+        }
+    }
+}

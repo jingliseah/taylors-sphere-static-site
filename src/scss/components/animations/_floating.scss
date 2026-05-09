@@ -1,0 +1,44 @@
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.1);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.animated.floating-1 {
+    border-radius: 50%;
+    transform: translateX(inherit);
+    animation: float 6s ease-in-out infinite;
+}
+
+.animated.floating-2 {
+    transform: translateX(inherit);
+    animation: float2 6s ease-in-out infinite;
+}
+
+.animated.floating-md-2 {
+    @include media-breakpoint-up(md) {
+        transform: translateX(inherit);
+        animation: float2 6s ease-in-out infinite;
+    }
+}

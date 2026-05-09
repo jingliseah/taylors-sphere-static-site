@@ -1,0 +1,87 @@
+[v-cloak] {
+    visibility: hidden;
+}
+
+body {
+    outline: 0 !important;
+}
+
+.smooth-scroll{
+    overflow-y: hidden !important;
+    overflow-x: hidden
+}
+
+.panel {
+    height: 100vh;
+}
+
+.line-vertical {
+    width: 8px;
+    position: relative;
+    display: inline-block;
+    background-color: $taylors-red;
+}
+
+.text-red {
+    color: $taylors-red;
+}
+
+.bg-red {
+    background-color: $taylors-red;
+}
+
+.summary {
+    .title {
+        font-size: 38px;
+    }
+    .description{
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.copyright {
+    font-size: 12px;
+    @include media-breakpoint-up(md) {
+        font-size: 16px;
+    }
+}
+
+.chat {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9999;
+    bottom: 3%;
+    right: 5%;
+    box-shadow: 6px 11px 22px -10px rgb(0 0 0 / 36%);
+    border-radius: 50px;
+    width: 50px;
+    height: auto;
+    @include media-breakpoint-up(md) {
+        width: 60px;
+        right: 2%;
+    }
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+    transition: all .2s ease;
+    &:hover{
+        color: $taylors-red;
+    }
+}
+
+.c-scrollbar {
+    opacity: 1;
+    z-index: $zindex-fixed;
+}
+
+.text-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

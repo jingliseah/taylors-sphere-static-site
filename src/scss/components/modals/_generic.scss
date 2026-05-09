@@ -1,0 +1,11 @@
+.modal.modal-generic {
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-header {
+        .btn:focus {
+            box-shadow: none;
+        }
+    }
+}

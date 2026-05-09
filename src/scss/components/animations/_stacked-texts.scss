@@ -1,0 +1,9 @@
+.animated.stacked-texts {
+    .text {
+        line-height: 64px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+        color: transparent;
+        -webkit-text-stroke: 1px $primary;
+    }
+}

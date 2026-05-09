@@ -1,0 +1,327 @@
+.parallax-container {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.section.section-hero {
+    position: relative;
+    overflow: hidden;
+    
+    .scene {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .decorations-container {
+        .decoration {
+            position: absolute;
+        }
+
+        .taylors-sphere-logo {
+            left: 50%;
+            top: 15%;
+            width: 37%;
+            transform: translateX(-50%);
+        }
+
+        .pool {
+            width: 91%;
+            top: 58%;
+            right: -15%;
+        }
+
+        .floor-4 {
+            width: 40%;
+            top: 62%;
+            left: 29%;
+        }
+
+        .floor-1 {
+            width: 117%;
+            top: 54%;
+            left: -27%;
+        }
+
+        .floor-2 {
+            width: 57%;
+            top: 61%;
+            left: -12%;
+        }
+
+        .floor-3 {
+            width: 74%;
+            top: 63%;
+            right: -21%;
+        }        
+        
+        .sky {
+            transform: translateX(-50%);
+            left: 50%;
+            top: 34%;
+            width: 63%;
+        }
+
+        .clouds {
+            left: 0%;
+            top: 32%;
+            width: 58%;
+        }
+
+        .red-element {
+            right: 30%;
+            top: 50%;
+            width: 20%;
+        }
+
+        .basketball {
+            right: 27%;
+            top: 43%;
+            width: 17%;
+        }
+        
+        .roof-and-tree {
+            width: 42%;
+            top: 48%;
+            left: 24%;
+        }
+
+        .block-a {
+            left: -28%;
+            top: 40%;
+            width: 72%;
+        }
+
+        .block-c-d-e {
+            right: -32%;
+            top: 41%;
+            width: 72%;
+        }
+
+        .medicine-students {
+            left: 30%;
+            width: 40%;
+            top: 53%;
+        }        
+
+        .drone {
+            left: 32%;
+            top: 43%;
+            width: 10%;
+        }
+
+        .duckie {
+            right: 4%;
+            top: 56%;
+            width: 19%;
+        }
+
+        .orange-element {
+            right: -13%;
+            top: 57%;
+            width: 17%;
+        }
+
+        .wood-work {
+            width: 24%;
+            top: 54%;
+            right: -1%;
+        }
+
+        .robotics {
+            right: 11%;
+            top: 65%;
+            width: 24%;
+        }
+
+        .threed-printers {
+            width: 25%;
+            top: 61%;
+            left: 1%;
+        }
+
+        .students-1 {
+            left: 24%;
+            top: 59%;
+            width: 22%;
+        }
+
+        .students-2 {
+            left: 42%;
+            top: 64%;
+            width: 22%;
+        }
+        
+        .students-3 {
+            width: 6%;
+            top: 62%;
+            right: 35%;
+        }
+
+        .uni-square {
+            width: 13%;
+            top: 68%;
+            left: 5%;
+        }
+
+        .art {
+            width: 14%;
+            top: 57%;
+            right: 23%;
+        }
+
+        @include media-breakpoint-up (lg) {
+            .taylors-sphere-logo {
+                top: 15%;
+                width: 13%;
+            }
+            
+            .sky {
+                top: 30%;
+                width: 24%;
+            }
+    
+            .clouds {
+                left: 29%;
+                top: 35%;
+                width: 23%;
+            }
+    
+            .red-element {
+                right: 37%;
+                top: 49%;
+                width: 12%;
+            }
+    
+            .basketball {
+                right: 40%;
+                top: 42%;
+                width: 6%;
+            }
+            
+            .roof-and-tree {
+                width: 19%;
+                top: 45%;
+                left: 39%;
+            }
+    
+            .block-c-d-e {
+                right: 8%;
+                top: 26%;
+                width: 38%;
+            }
+    
+            .block-a {
+                left: 12%;
+                top: 26%;
+                width: 38%;
+            }
+            
+            .medicine-students {
+                left: 42%;
+                width: 18%;
+                top: 51%;
+            }
+    
+            .pool {
+                width: 34%;
+                top: 65%;
+                right: 8%;
+            }
+    
+            .floor-1 {
+                width: 47%;
+                top: 62%;
+                left: 8%;
+            }
+    
+            .floor-2 {
+                width: 29%;
+                top: 64%;
+                left: 22%;
+            }
+    
+            .floor-3 {
+                width: 35%;
+                top: 68%;
+                right: 14%;
+            }
+    
+            .floor-4 {
+                width: 19%;
+                top: 68%;
+                left: 42%;
+            }
+    
+            .drone {
+                left: 44%;
+                top: 35%;
+                width: 5%;
+            }
+    
+            .duckie {
+                right: 27%;
+                top: 58%;
+                width: 8%;
+            }
+    
+            .orange-element {
+                right: 21%;
+                top: 58%;
+                width: 7%;
+            }
+    
+            .wood-work {
+                width: 11%;
+                top: 53%;
+                right: 23%;
+            }
+    
+            .robotics {
+                right: 30%;
+                top: 70%;
+                width: 12%;
+            }
+    
+            .threed-printers {
+                width: 15%;
+                top: 60%;
+                left: 27%;
+            }
+    
+            .students-1 {
+                left: 39%;
+                top: 60%;
+                width: 11%;
+            }
+    
+            .students-2 {
+                left: 48%;
+                top: 67%;
+                width: 10%;
+            }
+            
+            .students-3 {
+                width: 6%;
+                top: 62%;
+                right: 35%;
+            }
+    
+            .uni-square {
+                width: 13%;
+                top: 54%;
+                left: 16%;
+            }
+    
+            .art {
+                width: 18%;
+                top: 46%;
+                right: 13%;
+            }
+        }
+    }
+}
